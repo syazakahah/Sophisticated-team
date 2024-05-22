@@ -9,43 +9,29 @@ body {
       
     
 }
- 
-  .custom-navbar {
+
+/*navigation bar*/
+.custom-navbar {
             background-color: #b16b73 ; 
       position: sticky;
         }
         
-        .custom-nav-link {
+.custom-nav-link {
             color: #fff; 
             
         }    
     
-
+/*image settings*/
 img {
     vertical-align:middle;
     border-style: none;
     
 }
 
-#starsLeft {
-    position: absolute;
-    left: 0;
-    top: 5%;
-    opacity: 0.7;
-    z-index: 2;
-}
-
-#starsRight {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    top: 5%;
-    opacity: 0.7;
-}
-
+/*logo and moto*/
 #mainDiv {
     color: #ffffffef;
-    top: 35%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -66,27 +52,58 @@ img {
 @media screen and (max-width: 720px) {
     #mainDiv {
         color: #ffffffef;
-        top: 40%;
+        top: 37%;
         left: 50%;
         transform: translate(-50%, -50%);
-       /* position: absolute;*/
+        position: absolute;
         z-index: 8;
         align-items: center;
         justify-content: center;
-        /*display: flex !important;
-        flex-direction: column !important;*/
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     #logo {
-        height: 125px;
+        height: 148px;
         vertical-align: middle;
        
     }
 }
+
 #MainText {
     color: #b16b73;
     text-align: center;
 }
+
+/*copyrights position*/
+@media screen and (max-width: 720px) {
+    #copyright {
+        
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 16;
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+   }
+
+ #copyright{
+    color: #9e595f;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 8;
+    align-items: center; 
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+        
+    }
 
 h1 {
     font-size: 2.25rem;
@@ -95,38 +112,21 @@ h1 {
     margin-top: 0;
 }
 
-
+/*cloud position*/
 .clouds {
     position: absolute;
     bottom: 0;
-    width: 99%;
-}
-.scrollspy-example-2 {
-    position: relative;
-    z-index: 10; /* Higher than clouds */
+    width: 105%;
+    z-index: 1;
 }
 
-.clouds {
-    position: absolute;
-    z-index: 1; /* Ensure clouds have lower z-index */
+/*pills to navigate info page*/
+.nav-pills .nav-link.active {
+    background-color: #9e595f; /* Pink color for active pill */
 }
-
-.night {
-    position: absolute;
-    z-index: 2; /* Ensure shooting star is above clouds */
-}
-
-          .nav-pills .nav-link.active {
-              background-color: #9e595f; /* Pink color for active pill */
-          }
           
-          .nav-pills .nav-link {
-              color:black; /* Pink color for default pill */
-          }
- 
-.scrollspy-example-2 {
-  height: 80vh; /* Adjust height as needed (vh - viewport height) */
-  overflow-y: auto; /* Enable scrolling if content overflows */
+.nav-pills .nav-link {
+    color:black; /* Pink color for default pill */
 }
 
 .navbar-custom {
@@ -139,21 +139,22 @@ h1 {
     z-index: 10; /* Higher than clouds */
 }
 
-
-#cloudLeftTop {
-    position: absolute;
-    top: -10%;
-    left: -20px;
-    z-index: 1;
+/*item1, 2 ,3 in info*/
+ .scrollspy-example-2 {
+    position: relative;
+    z-index: 10; /* Higher than clouds */
 }
 
-#cloudBottomRight {
-    position: absolute;
-    bottom: 10%;
-    right: -20px;
-    z-index: 1;
+.scrollspy-example-2 {
+  height: 80vh; /* Adjust height as needed (vh - viewport height) */
+  overflow-y: auto; /* Enable scrolling if content overflows */
 }
 
+/*shooting star*/
+.night {
+    position: absolute;
+    z-index: 2; /* Ensure shooting star is above clouds */
+}
 .night {
     position: relative;
     width: 100%;
@@ -202,29 +203,3 @@ h1 {
     }
 }
 
-.video {
-    height: 100%;
-    width: 100%;
-    border: 0;
-}
-
-.info-container {
-    position: relative;
-    display: inline-block; /* Or 'block' depending on layout */
-}
-
-.video-container img {
-    display: block; /* Remove bottom space/margin under the image */
-    width: 100%; /* Adjust based on your needs */
-    height: auto;
-}
-
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    width: 64px; /* Adjust size of the play button */
-    height: 64px; /* Adjust size of the play button */
-}
