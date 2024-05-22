@@ -1,0 +1,230 @@
+body {
+    background: #f7dbf4;
+    overflow: hidden;
+    /*display: flex;*/
+    justify-content:center;
+    align-items: center;
+    font-family: "Didot",serif;
+    margin: 0;
+      
+    
+}
+ 
+  .custom-navbar {
+            background-color: #b16b73 ; 
+      position: sticky;
+        }
+        
+        .custom-nav-link {
+            color: #fff; 
+            
+        }    
+    
+
+img {
+    vertical-align:middle;
+    border-style: none;
+    
+}
+
+#starsLeft {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+#starsRight {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 5%;
+    opacity: 0.7;
+}
+
+#mainDiv {
+    color: #ffffffef;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 8;
+   align-items: center; 
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    
+}
+
+#logo {
+    height: 35vh;
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 720px) {
+    #mainDiv {
+        color: #ffffffef;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       /* position: absolute;*/
+        z-index: 8;
+        align-items: center;
+        justify-content: center;
+        /*display: flex !important;
+        flex-direction: column !important;*/
+    }
+
+    #logo {
+        height: 125px;
+        vertical-align: middle;
+       
+    }
+}
+#MainText {
+    color: #b16b73;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+
+.clouds {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+.scrollspy-example-2 {
+    position: relative;
+    z-index: 10; /* Higher than clouds */
+}
+
+.clouds {
+    position: absolute;
+    z-index: 1; /* Ensure clouds have lower z-index */
+}
+
+.night {
+    position: absolute;
+    z-index: 2; /* Ensure shooting star is above clouds */
+}
+
+          .nav-pills .nav-link.active {
+              background-color: #9e595f; /* Pink color for active pill */
+          }
+          
+          .nav-pills .nav-link {
+              color:black; /* Pink color for default pill */
+          }
+ 
+.scrollspy-example-2 {
+  height: 80vh; /* Adjust height as needed (vh - viewport height) */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.navbar-custom {
+    position: relative;
+    z-index: 10; /* Higher than clouds */
+}
+
+#navbar-example3 {
+    position: relative;
+    z-index: 10; /* Higher than clouds */
+}
+
+
+#cloudLeftTop {
+    position: absolute;
+    top: -10%;
+    left: -20px;
+    z-index: 1;
+}
+
+#cloudBottomRight {
+    position: absolute;
+    bottom: 10%;
+    right: -20px;
+    z-index: 1;
+}
+
+.night {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(45deg);
+}
+
+.shooting_star {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(
+        -45deg,
+        #b16b73,
+        rgba(255, 0, 97, 0)
+    );
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+    animation: tail 3000ms ease-in-out, shooting 3000ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tail {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 100px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes shooting {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.info-container {
+    position: relative;
+    display: inline-block; /* Or 'block' depending on layout */
+}
+
+.video-container img {
+    display: block; /* Remove bottom space/margin under the image */
+    width: 100%; /* Adjust based on your needs */
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 64px; /* Adjust size of the play button */
+    height: 64px; /* Adjust size of the play button */
+}
