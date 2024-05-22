@@ -16,28 +16,17 @@
    <script>
     $( function() {
       var availableTags = [
-        "ActionScript",
-        "AppleScript",
-        "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme"
+        "Baby's Breath",
+        "Carnations",
+        "Dahlia",
+        "Daisy",
+        "Gysophila",
+        "Peony",
+        "Rose",
+        "Sunflower",
+        "Tuberose",
+        "Tulips",
+        
       ];
       $( "#tags" ).autocomplete({
         source: availableTags
@@ -46,17 +35,13 @@
     </script>
 </head>
     
-<body> 
-    <div id="mainDiv">
-            <img id="logo" alt="logo" src="images/flowers.svg" />
-            <div id="MainText">
-                <h1>Welcome On Board</h1>
-                <span>Explore your choices of bloom<br /></span><br />
-            </div>
-    </div>
+<body >
+
+    
+    
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">QQ d' florist bloom</a>
+        <a class="navbar-brand" href="#">QQ d' Florist Bloom</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -84,19 +69,36 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-         <form class="d-flex" role="search">
-        <input id="tags"class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        
-             <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+        <form id="search-form" class="d-flex" role="search" action="info.html" method="GET">
+            <input id="tags" name="query" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
         </div>
       </div>
     </nav>
    
-    <img
+   <div id="mainDiv">
+            <img id="logo" alt="logo" src="images/flowers.svg" />
+            <div id="MainText">
+                <h1>Welcome On Board</h1>
+                <span>Explore your choices of bloom<br /></span><br />
+       </div> 
+       
+    
+     <div class="night">
+         <div class="shooting_star">
+             <div class="shooting_star">
+             </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    <footer>
+        <img
             class="clouds"
             alt="cloud"
-            style="z-index: 3; transform:22 translate(0px, -1.55909px)"
+            style="z-index: 3; transform: translate(0px, -1.55909px)"
             src="images/cloud1.svg" />
        <img
             class="clouds"
@@ -114,15 +116,7 @@
             alt="cloud"
             style="z-index: 6; transform: translate(0px, -3.89772px)"
             src="images/cloud4.svg" />
-       
     
-     <div class="night">
-         <div class="shooting_star">
-             <div class="shooting_star">
-             </div>
-            </div>
-        </div>
-    
-</body>
+    </footer>
     
 </html>
