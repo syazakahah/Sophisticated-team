@@ -14,30 +14,19 @@
      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
    <script>
-    $( function() {
+     $( function() {
       var availableTags = [
-        "ActionScript",
-        "AppleScript",
-        "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme"
+        "Baby's Breath",
+        "Carnations",
+        "Dahlia",
+        "Daisy",
+        "Gysophila",
+        "Peony",
+        "Rose",
+        "Sunflower",
+        "Tuberose",
+        "Tulips",
+        
       ];
       $( "#tags" ).autocomplete({
         source: availableTags
@@ -77,14 +66,18 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-         <form class="d-flex" role="search">
-        <input id="tags"class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        
-        <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+           <form id="search-form" class="d-flex" role="search" action="info.html" method="GET">
+            <input id="tags" name="query" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
         </div>
       </div>
     </nav>
+    
+            <div id="copyright">
+        
+         <p>&copy;2024 My Website. All rights reserved.</p>
+    </div>
          <div class="row">
       <div class="col-4">
         <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
@@ -112,7 +105,7 @@
           </div>
           <div id="item-1-1">
             <h5>Color</h5>
-            <p>Examples of common meanings of different coloured roses are: true love (red), mystery (blue), innocence or purity (white), death (black), friendship (yellow), and passion (orange). </p>
+            <p>Examples of common meanings of different colors are: true love (red), mystery (blue), innocence or purity (white), death (black), friendship (yellow), and passion (orange). </p>
           </div>
           <div id="item-1-2">
             <h5>Item 1-2</h5>
@@ -147,9 +140,15 @@
         </div>
       </div>
     </div>
-             
+            
     
-    <img
+    
+    
+    
+    
+</body>
+    <footer>
+     <img
             class="clouds"
             alt="cloud"
             style="z-index: 3; transform:22 translate(0px, -1.55909px)"
@@ -170,12 +169,5 @@
             alt="cloud"
             style="z-index: 6; transform: translate(0px, -3.89772px)"
             src="images/cloud4.svg" />
-    
-    
-     <div class="night">
-            <div class="shooting_star">
-                <div class="shooting_star" />
-            </div>
-        </div>
-</body>
+    </footer>
 </html>
