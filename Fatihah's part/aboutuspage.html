@@ -10,12 +10,11 @@
             font-family: "Didot", serif;
             margin: 0;
             padding: 0;
-            /* Set clouds background */
-            background-image: none; /* Initially no background */
-            background-color: #f7dbf4; /* Set a fallback background color */
+            background-image: none; 
+            background-color: #f7dbf4; 
         }
 
-        /* Apply clouds background only for desktop views */
+        
         @media (min-width: 800px) {
             body {
                 background-image: url("cloud1.svg"), url("cloud2.svg"), url("cloud3.svg"), url("cloud4.svg");
@@ -59,7 +58,7 @@
         .img-container img,
         .map-container iframe {
             width: 90%;
-            height: 600px; /* Set a fixed height */
+            height: 600px; 
             border-radius: 30px;
         }
     </style>
@@ -102,10 +101,14 @@
 </nav>
 
 <main class="container justify-content-center">
-    <h2>About Us</h2>
+  <div class="row">
+    <div class="col-md-12 text-center"> 
+        <h2>About Us</h2>
+    </div>
+</div>
     <p>Welcome to QQ D'Bloom Florist, located at the Human Sciences Dry Area within IIUM. Since 2017, we have been dedicated to providing beautiful, high-quality floral arrangements for all occasions. Our passion for flowers and commitment to customer satisfaction make us the go-to florist for students, staff, and the wider IIUM community.</p>
     <p>Our shop, run by the talented Siti Aminah Mohd Radzi, offers a wide range of floral services, including ready-made bouquets, customized arrangements, and expert floral advice. We believe that flowers can brighten any day and bring joy to every occasion. Thank you for choosing QQ D'Bloom Florist to be a part of your special moments.</p>
-    <div class="content-container row">
+    <div class="row justify-content-center">
         <div class="col-md-6 img-container">
             <img src="florist.jpg" alt="QQ D'Bloom Florist">
         </div>
