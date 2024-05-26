@@ -10,12 +10,10 @@
             font-family: "Didot", serif;
             margin: 0;
             padding: 0;
-            /* Set clouds background */
-            background-image: none; /* Initially no background */
-            background-color: #f7dbf4; /* Set a fallback background color */
+            background-image: none; 
+            background-color: #f7dbf4; 
         }
 
-        /* Apply clouds background only for desktop views */
         @media (min-width: 800px) {
             body {
                 background-image: url("cloud1.svg"), url("cloud2.svg"), url("cloud3.svg"), url("cloud4.svg");
@@ -77,7 +75,6 @@
             border-color: #1877f2;
         }
 
-        /* Centering content horizontally */
         .center-content {
             display: flex;
             justify-content: center;
@@ -89,7 +86,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="home.html">QQ D'Bloom Florist</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
