@@ -1,0 +1,308 @@
+body {
+    background: #f7dbf4;
+    overflow-y:auto;
+    overflow-x: hidden;
+    justify-content:center;
+    align-items: center;
+    font-family: "Didot",serif;
+    margin: 0;
+    height: 100vh;
+      
+    
+}
+
+main{
+    overflow-y:auto;
+    overflow-x: hidden;
+    justify-content:center;
+    align-items: center;
+    font-family: "Didot",serif;
+    margin: 0;
+    z-index: 9;
+    height: 87vh;
+}
+
+/*customize page home*/
+#home{
+    margin-bottom: 33vh; /* Adjust this value to create enough space for the footer */
+    position: relative;
+    height: 82vh;
+    top:10vh;
+    z-index: 9;
+}
+/*search button*/
+#search{
+    color: white;
+    border-color: white;
+}
+
+/*button*/
+#proceed{
+  color: white; 
+  position: sticky;
+  top:71px;
+  margin-top:1%;
+  margin-bottom: 1%;
+  background-color: #d59494ef;
+  border-color: #d59494ef;
+  z-index: 9;
+}
+
+/*navigation bar*/
+.custom-navbar {
+    background-color: #b16b73 ; 
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}   
+ 
+
+.custom-nav-link {
+    color: #fff; 
+            
+        }    
+    
+/*image settings*/
+img {
+    vertical-align:middle;
+    border-style: none;
+    
+}
+
+/*promotions button and offcanvas*/
+.offcanvas{
+    background-color: floralwhite;
+}
+
+#promotions {
+    color: white;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    z-index: 20;
+    background-color: #b16b73;
+    border-color: #b16b73;
+    align-items: center; 
+    justify-content: center;
+    display: flex !important;   
+}
+
+@media screen and (max-width: 720px) {
+#promotions {
+        color: #ffffffef;
+        top: 71%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 5;
+        background-color: #d59494ef;
+        border-color: #d59494ef;
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        
+    }
+}
+
+/*logo and moto in main page*/
+#mainDiv {
+    color: #ffffffef;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 5;
+   align-items: center; 
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#logo {
+    height: 30vh;
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+#mainDiv {
+        color: #ffffffef;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 5;
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+#logo {
+        height: 148px;
+        vertical-align: middle;
+       
+    }
+}
+
+#MainText {
+    color: #b16b73;
+    text-align: center;
+}
+
+
+/*copyrights position*/
+@media screen and (max-width: 720px) {
+#copyright {
+        
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        z-index: 16;
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+   }
+
+#copyright{
+    color: #9e595f;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 8;
+    align-items: center; 
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+        
+    }
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+/*cloud position*/
+.clouds {
+    position: fixed;
+    bottom: 0;
+    width: 105%;
+    z-index: 0;
+}
+
+
+/*pills to navigate info page*/
+.nav-pills .nav-link.active {
+    background-color: #9e595f; /* Pink color for active pill */
+}
+          
+.nav-pills .nav-link {
+    color:black; /* Pink color for default pill */
+}
+
+.navbar-custom {
+    position: relative;
+    z-index: 8; /* Higher than clouds */
+}
+
+/*item1, 2 ,3 in info*/
+#navbar-example3 {
+    margin-top: 64px;
+    font-size: 17px;
+    position: relative;
+    z-index: 8; /* Higher than clouds */
+}
+
+.scrollspy-example-2 {
+    position: relative;
+    z-index: 8; /* Higher than clouds */
+}
+
+.scrollspy-example-2 {
+      margin-top: 57px;
+      height: 72vh; /* Adjust height as needed (vh - viewport height) */
+      overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/*page customize*/
+.scrollspy-example-5 {     
+    position: relative;
+    z-index: 7; /* Higher than clouds */
+}
+
+.scrollspy-example-5 {
+  height: 76vh; /* Adjust height as needed (vh - viewport height) */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+        margin-top: 57px;
+    margin-left: 3%;
+
+}
+.btn-bubbly {
+    
+  border-radius: 72px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*shooting star*/
+.night {
+    position: absolute;
+    z-index: 2; /* Ensure shooting star is above clouds */
+}
+.night {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(45deg);
+}
+
+.shooting_star {
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(
+        -45deg,
+        #b16b73,
+        rgba(255, 0, 97, 0)
+    );
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+    animation: tail 3000ms ease-in-out, shooting 3000ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tail {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 100px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes shooting {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}

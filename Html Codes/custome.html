@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>QQ d' Florist Bloom</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function() {
+            var availableTags = [
+                "Baby's Breath", "Carnations",  "Daisy", "Gysophila", 
+                "Peony", "Rose", "Sunflower",  "Tulips"
+            ];
+            $("#tags").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">QQ d' Bloom Florist</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="about.html">About Us</a>
+              </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active"  aria-current="page"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="buy.html">Ready-made bouquet</a></li>
+                <li><a class="dropdown-item" href="custome.html">Custome</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="info.html">Know Your Flowers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        <form id="search-form" class="d-flex" role="search" action="info.html" method="GET">
+            <input id="tags" name="query" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="search" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+      </div>
+    </nav>               
+
+        <main><div class="container-fluid" id="home">    
+<form id="start-shopping-form" action="https://forms.gle/t1nyxKJLCWnJVLYdA" method="get" target="_blank">
+  <button id="proceed" class="btn btn-outline-success " type="submit">Start shopping</button>
+</form>
+             <div class="col-19 d-flex justify-content-end">
+
+
+
+</div> 
+     
+       
+            <div class="row">    
+                <div class="col-12 bg-light p-1">
+                    <h4>Welcome to QQ d' Bloom Florist</h4>
+                    <p>Let's create your dream bouquet together. Fill out the form above with your preferences and any special instructions. We can't wait to bring your floral vision to life!</p>
+                </div>
+            </div>
+
+   
+            <h2>Customize Your Bouquets</h2>
+<ul>
+  
+    <h4>Step-by-Step</h4>
+   
+      <p>Step 1- Choose the Occasion. Eg: wedding, birthday, etc.</p>
+      <p>Step 2- Choose the flower you want.</p>
+        <img
+                 id="logo"
+                 src="Tulips.jpg"
+                 alt="pics"
+                 >
+  <img
+                 id="logo"
+                 src="Sunflower.jpg"
+                 alt="pics"
+                 >
+      <img
+                 id="logo"
+                 src="Roses.jpg"
+                 alt="pics"
+                 >
+  <p>Step 3- Choose your size, style, and scheme.</p>
+    <p>Step 4- Finalize your bouquet.</p>
+    <p>Step 5- Pay.</p>
+    
+</ul>
+       </div>
+</main>
+    
+    <div id="copyright">
+        
+         <p>&copy;2024 My Website. All rights reserved.</p>
+    </div>
+</body>
+    <footer>  
+       
+        
+       <img
+            class="clouds"
+            alt="cloud"
+            style="z-index: 6; transform: translate(0px, -2.33863px)"
+            src="cloud2.svg" />
+       
+       <img
+            class="clouds"
+            alt="cloud"
+            style="z-index: 5; transform: translate(0px, -3.89772px)"
+            src="cloud3.svg" />
+        
+       
+       
+        
+    </footer>
+
+</html>
